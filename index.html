@@ -123,6 +123,7 @@ footer{font-size:14px;color:var(--soft)}
       <div><span class="big" id="fMed">176 bin</span><span>Video başına medyan izlenme</span></div>
       <div><span class="big" id="fShare">12,5</span><span>Her 1.000 izlenmede videoyu birine gönderen kişi</span></div>
     </div>
+    <p class="note" id="heroDate"></p>
   </div>
   <figure class="frame"><img src="img/patik.jpg" alt="Hatçe Teyze sedirde el örgüsü patik örüyor"><figcaption>Hatçe, kış patiklerini örerken</figcaption></figure>
 </div></header>
@@ -149,7 +150,7 @@ footer{font-size:14px;color:var(--soft)}
     <div class="pill"><span class="big" id="pTr">%94</span><span>Türkiye</span></div>
   </div>
   <div class="grid2" style="margin-top:20px">
-    <div><h3>Yaş dağılımı</h3><div id="ages"></div><p class="note">Instagram takipçileri, yaşı bilinenler.</p></div>
+    <div><h3>Yaş dağılımı</h3><div id="ages"></div><p class="note" id="ageNote">Instagram takipçileri, yaşı bilinenler.</p></div>
     <div><h3>Başlıca şehirler</h3><div id="cities"></div><p class="note" id="cNote">Takipçiler tek bir bölgede değil, Türkiye'nin büyük şehirlerine yayılmış.</p></div>
   </div>
 </div></section>
@@ -158,13 +159,14 @@ footer{font-size:14px;color:var(--soft)}
   <div>
     <h2>Dört platformda her gün</h2>
     <p class="lead">Aynı video her akşam 18:00'de Instagram, Facebook, YouTube Shorts ve TikTok'ta yayınlanır.</p>
-    <div class="scroll"><table><thead><tr><th>Platform</th><th class="n">Takipçi</th><th class="n">Görüntüleme</th><th class="n">Dönem</th></tr></thead><tbody id="plat"></tbody></table></div>
-    <p class="note">Her satırın verisi kendi tarihinde ölçüldü; YouTube'da abone, diğerlerinde takipçi.</p>
+    <div class="scroll"><table><thead><tr><th>Platform</th><th class="n">Takipçi</th><th class="n">Görüntüleme</th><th class="n">Dönem</th><th class="n">Güncelleme</th></tr></thead><tbody id="plat"></tbody></table></div>
+    <p class="note">Instagram her gün otomatik, diğer platformlar haftalık olarak güncellenir. YouTube'da abone, diğerlerinde takipçi sayısı.</p>
   </div>
   <div>
     <h2>Saklanmıyor, gönderiliyor</h2>
     <p class="lead">Anneler videoyu çocuğuna, kadınlar kız kardeşine ve komşusuna yolluyor. Marka mesajı da bu yolla yayılır.</p>
     <div class="vids" id="vids"></div>
+    <p class="note" id="vidNote"></p>
   </div>
 </div></section>
 
@@ -224,7 +226,7 @@ footer{font-size:14px;color:var(--soft)}
 
 <footer class="band" style="padding-block:24px"><div class="wrap" id="foot">Son güncelleme: 25 Kasım 2026 · Kaynak: Metricool ve platform panoları</div></footer>
 
-<script id="seed" type="application/json">{"updated":"2026-11-25","source":"Metricool (Instagram, YouTube) ve platform panoları","account_start":"2026-11-05","instagram":{"followers":18241,"followers_date":"2026-11-23","views_30d":8468950,"shares_30d":107926,"reels_30d":20,"median_reel_views":176207,"shares_per_1000":12.5,"growth":[["2026-11-05",0],["2026-11-11",8572],["2026-11-12",9349],["2026-11-13",9898],["2026-11-14",10290],["2026-11-15",10881],["2026-11-16",11497],["2026-11-17",12104],["2026-11-18",13483],["2026-11-19",14319],["2026-11-20",14932],["2026-11-21",16066],["2026-11-22",17362],["2026-11-23",18241]]},"audience":{"female_pct":79.4,"turkey_pct":93.6,"age":[["55–64",34.4],["65+",32.0],["45–54",17.6],["35–44",7.0],["25–34",6.9],["18–24",1.8]],"cities_date":"2026-11-24","cities":[["İstanbul",11.4],["İzmir",5.0],["Ankara",4.9],["Bursa",3.2],["Konya",2.6],["Adana",1.9],["Antalya",1.9]]},"platforms":[{"name":"Instagram","followers":18241,"views":8468950,"period":"30 gün","date":"2026-11-23"},{"name":"Facebook","followers":2929,"views":947900,"period":"28 gün","date":"2026-11-24"},{"name":"YouTube","followers":1410,"views":1000000,"period":"28 gün","date":"2026-11-24"},{"name":"TikTok","followers":null,"views":618800,"period":"7 gün","date":"2026-11-24"}],"top_videos":[{"title":"Ananızı arayın, o sizi bekliyo","views":2316741,"shares":38926},{"title":"Anneanneye niye iki kere ana derler?","views":1053568,"shares":25347},{"title":"Babaanne sesini heç çıkarmaz","views":1041456,"shares":5382},{"title":"Gavgayı yastığa taşıma","views":814972,"shares":5294}]}</script>
+<script id="seed" type="application/json">{"updated":"2026-11-25","source":"Metricool (her gün) ve platform panoları (haftalık, elle)","account_start":"2026-11-05","instagram":{"followers":18241,"followers_date":"2026-11-23","views_30d":8468950,"shares_30d":107926,"reels_30d":20,"median_reel_views":176207,"shares_per_1000":12.5,"growth":[["2026-11-05",0],["2026-11-11",8572],["2026-11-12",9349],["2026-11-13",9898],["2026-11-14",10290],["2026-11-15",10881],["2026-11-16",11497],["2026-11-17",12104],["2026-11-18",13483],["2026-11-19",14319],["2026-11-20",14932],["2026-11-21",16066],["2026-11-22",17362],["2026-11-23",18241]],"date":"2026-11-24"},"audience":{"female_pct":79.4,"turkey_pct":93.6,"age":[["55–64",34.4],["65+",32.0],["45–54",17.6],["35–44",7.0],["25–34",6.9],["18–24",1.8]],"cities_date":"2026-11-24","cities":[["İstanbul",11.4],["İzmir",5.0],["Ankara",4.9],["Bursa",3.2],["Konya",2.6],["Adana",1.9],["Antalya",1.9]],"date":"2026-11-24"},"platforms":[{"name":"Instagram","handle":"@hatce.teyze.ai","followers":18241,"views":8468950,"period":"30 gün","date":"2026-11-23","auto":true},{"name":"Facebook","handle":"Hatçe Teyze","followers":2929,"views":947900,"period":"28 gün","date":"2026-11-24","auto":false},{"name":"YouTube","handle":"@hatce.teyze.ai.01","followers":1410,"views":1000000,"period":"28 gün","date":"2026-11-24","auto":false},{"name":"TikTok","handle":"@hatceteyze.ai","followers":null,"views":618800,"period":"7 gün","date":"2026-11-24","auto":false}],"top_videos":[{"title":"Ananızı arayın, o sizi bekliyo","views":2316741,"shares":38926},{"title":"Anneanneye niye iki kere ana derler?","views":1053568,"shares":25347},{"title":"Babaanne sesini heç çıkarmaz","views":1041456,"shares":5382},{"title":"Gavgayı yastığa taşıma","views":814972,"shares":5294}]}</script>
 <script>
 {
 const $=id=>document.getElementById(id);
@@ -252,16 +254,16 @@ s.innerHTML=grid+`<path class="mass" d="${p} L${X(last[0])} ${Y(0)} Z" fill="var
 const render=d=>{D=d;const ig=d.instagram,a=d.audience,age=Object.fromEntries(a.age);
 const n=days(d.account_start,ig.followers_date);
 $('fFollow').textContent=human(ig.followers);$('fFollowL').textContent=`Instagram takipçisi, hesap açılalı ${n} gün`;
-$('fViews').textContent=human(ig.views_30d);$('fMed').textContent=human(ig.median_reel_views);$('fShare').textContent=tr(ig.shares_per_1000,1);
+$('fViews').textContent=human(ig.views_30d);$('fMed').textContent=human(ig.median_reel_views);$('fShare').textContent=tr(ig.shares_per_1000,1);$('heroDate').textContent=`Instagram verileri: ${dt(ig.date||ig.followers_date)} · her gün güncellenir`;
 $('gTitle').textContent=`İlk ${n} günde sıfırdan ${human(ig.followers)} takipçiye`;
 $('gNote').textContent=`Son ${ig.reels_30d} videoda toplam ${tr(ig.shares_30d)} gönderim. Takipçi ölçümü ${dt(ig.followers_date)}; 5–10 Kasım arası ölçüm yok.`;
-$('pFem').textContent='%'+tr(a.female_pct);$('pTr').textContent='%'+tr(a.turkey_pct);
+$('pFem').textContent='%'+tr(a.female_pct);$('ageNote').textContent=`Instagram takipçileri, yaşı bilinenler. Güncelleme: ${dt(a.date||d.updated)}.`;$('cNote').textContent=`Takipçiler tek bir bölgede değil, Türkiye'nin büyük şehirlerine yayılmış. Güncelleme: ${dt(a.cities_date)}.`;$('pTr').textContent='%'+tr(a.turkey_pct);
 const p45=(age['45–54']||0)+(age['55–64']||0)+(age['65+']||0),p55=(age['55–64']||0)+(age['65+']||0);$('p45').textContent='%'+tr(p45);$('p55').textContent='%'+tr(p55);$('whyAud').textContent=`55 yaş üstü takipçi oranı %${tr(p55)}, kadın oranı %${tr(a.female_pct)}. Mutfağın, kilerin, el işinin ve aile hediyelerinin kararını veren kişiler.`;
 const amax=Math.max(...a.age.map(r=>r[1]));$('ages').innerHTML=a.age.map(([k,v])=>`<div class="row"><span>${esc(k)}</span><div class="bar" style="width:${v/amax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
 const cmax=Math.max(...a.cities.map(r=>r[1]));$('cities').innerHTML=a.cities.map(([k,v])=>`<div class="row lite"><span>${esc(k)}</span><div class="bar" style="width:${v/cmax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
-$('plat').innerHTML=d.platforms.map(p=>`<tr><td>${esc(p.name)}</td><td class="n">${p.followers==null?'—':esc(tr(p.followers))}</td><td class="n">${esc(human(p.views))}</td><td class="n">${esc(p.period)}</td></tr>`).join('');
+$('plat').innerHTML=d.platforms.map(p=>`<tr><td>${esc(p.name)}</td><td class="n">${p.followers==null?'—':esc(tr(p.followers))}</td><td class="n">${esc(human(p.views))}</td><td class="n">${esc(p.period)}</td><td class="n">${esc(dShort(p.date))}</td></tr>`).join('');
 const vmax=Math.max(...d.top_videos.map(v=>v.views));$('vids').innerHTML=d.top_videos.map(v=>`<div class="vid"><span>${esc(v.title)}</span><b>${esc(human(v.views))}</b><div class="track"><i style="width:${v.views/vmax*100}%"></i></div><small>${esc(tr(v.shares))} kez gönderildi</small></div>`).join('');
-$('foot').textContent=`Son güncelleme: ${dt(d.updated)} · Kaynak: ${d.source}. Rakamlar her hafta yenilenir.`;
+$('vidNote').textContent=`Instagram, son 30 gün. Güncelleme: ${dt(ig.date||ig.followers_date)}.`;$('foot').textContent=`Son güncelleme: ${dt(d.updated)} · Kaynak: ${d.source}. Instagram ve YouTube abone verileri her gün, diğerleri haftada bir güncellenir.`;
 chart()};
 render(JSON.parse($('seed').textContent));
 fetch('data.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d)render(d)}).catch(()=>{});
