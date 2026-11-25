@@ -140,7 +140,8 @@
       "views": 8468950,
       "period": "30 gün",
       "date": "2026-11-23",
-      "auto": true
+      "auto": true,
+      "window": 30
     },
     {
       "name": "Facebook",
@@ -149,7 +150,8 @@
       "views": 947900,
       "period": "28 gün",
       "date": "2026-11-24",
-      "auto": false
+      "auto": false,
+      "window": 28
     },
     {
       "name": "YouTube",
@@ -158,7 +160,8 @@
       "views": 1000000,
       "period": "28 gün",
       "date": "2026-11-24",
-      "auto": false
+      "auto": false,
+      "window": 28
     },
     {
       "name": "TikTok",
@@ -167,7 +170,8 @@
       "views": 618800,
       "period": "7 gün",
       "date": "2026-11-24",
-      "auto": false
+      "auto": false,
+      "window": 7
     }
   ],
   "top_videos": [
