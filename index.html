@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
 <title>Hatçe Teyze Medya Kiti</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
@@ -98,7 +99,8 @@ td.n,th.n{text-align:right;white-space:nowrap}
 .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 .socials{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .socials li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px}
-.socials span{color:var(--soft)}
+.socials span,.socials a{color:var(--soft);overflow-wrap:anywhere;text-align:right}
+.socials a{color:var(--wine);text-decoration:underline;min-height:24px}
 footer{font-size:14px;color:var(--soft)}
 @media(max-width:860px){.why,.fmt{grid-template-columns:minmax(0,1fr)}.cats{grid-template-columns:repeat(2,minmax(0,1fr))}.trust ul{columns:1}}
 @media(max-width:700px){.hero .wrap,.growth .wrap,.grid2,.contact .wrap{grid-template-columns:minmax(0,1fr)}.frame{max-width:360px;margin:0 auto;transform:none}nav a{display:none}nav .tbtn{margin-left:auto}}
@@ -130,7 +132,7 @@ footer{font-size:14px;color:var(--soft)}
 <section class="growth band" id="performans"><div class="wrap">
   <div>
     <h2 id="gTitle">İlk 18 günde sıfırdan 18 bin takipçiye</h2>
-    <p class="lead">Büyümenin neredeyse tamamı reklamsız, videoların paylaşılmasıyla geldi: izleyenlerin %90'ından fazlası henüz takipçi değil.</p>
+    <p class="lead">Büyümenin tamamı reklamsız, videoların paylaşılmasıyla geldi.</p>
     <p class="note" id="gNote"></p>
   </div>
   <div class="fig"><svg id="chart" role="img" aria-label="Instagram takipçi sayısının günlük artışı"></svg></div>
@@ -170,7 +172,7 @@ footer{font-size:14px;color:var(--soft)}
   <h2>Neden Hatçe?</h2>
   <div class="why" style="margin-top:20px">
     <div><p class="big">Güven</p><h3>Bir influencer gibi değil, bir büyük gibi konuşur</h3><p>Önerdiği şey reklam değil, nasihat gibi algılanır. Ege şivesi, el işleri ve köy evi izleyicinin kendi geçmişinden tanıdığı bir dünya kurar.</p></div>
-    <div><p class="big">Kitle</p><h3>Kimsenin konuşmadığı kadınlara konuşur</h3><p>Takipçilerin üçte ikisi 55 yaş üstünde, beşte dördü kadın. Mutfağın, kilerin, el işinin ve aile hediyelerinin kararını veren kişiler.</p></div>
+    <div><p class="big">Kitle</p><h3>Kimsenin konuşmadığı kadınlara konuşur</h3><p id="whyAud">55 yaş üstü takipçi oranı %66, kadın oranı %79. Mutfağın, kilerin, el işinin ve aile hediyelerinin kararını veren kişiler.</p></div>
     <div><p class="big">Yayılım</p><h3>İçerik kendiliğinden dolaşır</h3><p>Videolar belli bir kişiye gönderilmek üzere kurulur: anneye, eşe, evlada. Bir iş birliği, takipçi sayısının çok ötesine ulaşır.</p></div>
   </div>
 </div></section>
@@ -213,10 +215,10 @@ footer{font-size:14px;color:var(--soft)}
     <button class="btn" id="copy" type="button">E-posta adresini kopyala</button>
   </div>
   <ul class="socials">
-    <li><b>Instagram</b><span>@hatce.teyze.ai</span></li>
+    <li><b>Instagram</b><a href="https://www.instagram.com/hatce.teyze.ai/" target="_blank" rel="noopener">instagram.com/hatce.teyze.ai</a></li>
     <li><b>Facebook</b><span>Hatçe Teyze</span></li>
-    <li><b>YouTube</b><span>@hatce.teyze.ai.01</span></li>
-    <li><b>TikTok</b><span>@hatceteyze.ai</span></li>
+    <li><b>YouTube</b><a href="https://www.youtube.com/@hatce.teyze.ai.01" target="_blank" rel="noopener">youtube.com/@hatce.teyze.ai.01</a></li>
+    <li><b>TikTok</b><a href="https://www.tiktok.com/@hatceteyze.ai" target="_blank" rel="noopener">tiktok.com/@hatceteyze.ai</a></li>
   </ul>
 </div></section>
 
@@ -254,7 +256,7 @@ $('fViews').textContent=human(ig.views_30d);$('fMed').textContent=human(ig.media
 $('gTitle').textContent=`İlk ${n} günde sıfırdan ${human(ig.followers)} takipçiye`;
 $('gNote').textContent=`Son ${ig.reels_30d} videoda toplam ${tr(ig.shares_30d)} gönderim. Takipçi ölçümü ${dt(ig.followers_date)}; 5–10 Kasım arası ölçüm yok.`;
 $('pFem').textContent='%'+tr(a.female_pct);$('pTr').textContent='%'+tr(a.turkey_pct);
-const p45=(age['45–54']||0)+(age['55–64']||0)+(age['65+']||0),p55=(age['55–64']||0)+(age['65+']||0);$('p45').textContent='%'+tr(p45);$('p55').textContent='%'+tr(p55);
+const p45=(age['45–54']||0)+(age['55–64']||0)+(age['65+']||0),p55=(age['55–64']||0)+(age['65+']||0);$('p45').textContent='%'+tr(p45);$('p55').textContent='%'+tr(p55);$('whyAud').textContent=`55 yaş üstü takipçi oranı %${tr(p55)}, kadın oranı %${tr(a.female_pct)}. Mutfağın, kilerin, el işinin ve aile hediyelerinin kararını veren kişiler.`;
 const amax=Math.max(...a.age.map(r=>r[1]));$('ages').innerHTML=a.age.map(([k,v])=>`<div class="row"><span>${esc(k)}</span><div class="bar" style="width:${v/amax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
 const cmax=Math.max(...a.cities.map(r=>r[1]));$('cities').innerHTML=a.cities.map(([k,v])=>`<div class="row lite"><span>${esc(k)}</span><div class="bar" style="width:${v/cmax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
 $('plat').innerHTML=d.platforms.map(p=>`<tr><td>${esc(p.name)}</td><td class="n">${p.followers==null?'—':esc(tr(p.followers))}</td><td class="n">${esc(human(p.views))}</td><td class="n">${esc(p.period)}</td></tr>`).join('');
