@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hatçe Teyze Medya Kiti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE  warm but businesslike: a creator's brand page read by agencies and brand managers
+   IDEA   a whitewashed village house: lime-white walls, a woven Aegean kilim strip and an oya edge between sections
+   PICTURE Hatçe's portrait framed like a photo on the village wall, and the follower climb drawn as a solid indigo mass
+   COLOUR lime white ground, natural-dye kilim colours: indigo (çivit) #2d3a7c leads, madder red #b3362b, olive #5e7232, saffron #d79a22
+   TYPE   Fraunces 600 for names and figures, Figtree for text
+   LAYOUT laptop: burgundy hero band, title and four figures left, portrait right, growth chart full width under it;
+          phone: title, portrait, figures, chart, then single-column sections */
+:root{color-scheme:light dark;
+--bg:light-dark(#fdfcfa,#121315);--ink:light-dark(#1d1f2a,#eceae4);--soft:light-dark(#5f6170,#b0afa8);
+--wine:light-dark(#2d3a7c,#9aa8f0);--wine2:light-dark(#eef0f8,#1d2033);--olive:light-dark(#5e7232,#a9bf72);
+--oya:light-dark(#b3362b,#f08a7e);--sun:light-dark(#d79a22,#e8b54e);--line:light-dark(#e6e3dc,#2e3036);--panel:light-dark(#f7f5f0,#1a1b1f)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Figtree,system-ui,sans-serif;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto}
+.band{padding-block:clamp(32px,5vw,72px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+h1,h2,h3,.big{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.02em;line-height:1.05;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+h3{font-size:20px;line-height:1.2;margin:0 0 6px}
+p{margin:0 0 12px;max-width:66ch}
+.lead{font-size:17px;color:var(--soft)}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;padding:12px max(5vw,16px)}
+nav b{font-family:Fraunces,serif;font-size:19px;margin-right:auto}
+nav a{text-decoration:none;font-size:15px;padding:8px 2px;color:var(--soft)}
+nav .tbtn{min-height:40px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+nav .tbtn:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+nav a:hover,nav a:focus-visible{color:var(--wine);outline:none;text-decoration:underline}
+.hero{background:var(--bg);color:var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero h1{font-size:clamp(44px,6vw,72px);color:var(--ink)}
+.hero .lead{color:var(--soft);font-size:18px;margin-top:16px}
+.tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:99px;font-size:14px;color:var(--soft);background:var(--panel)}
+.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px;margin-top:32px}
+.figs div{border-top:2px solid var(--line);padding-top:10px}
+.figs .big{font-size:clamp(34px,4vw,48px);color:var(--wine);white-space:nowrap}
+.figs span{display:block;font-size:15px;color:var(--soft)}
+.frame{background:#ffffff;border:1px solid var(--line);padding:12px 12px 40px;border-radius:4px;transform:rotate(1.2deg);box-shadow:0 18px 40px -18px #0008;position:relative}
+.frame img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:2px}
+.frame figcaption{position:absolute;left:14px;right:14px;bottom:10px;font-size:14px;color:#6b5c5f;text-align:center}
+.oya{height:26px}
+.kilim{height:34px;background:var(--bg)}
+.kilim svg{width:100%;height:34px;display:block}
+.oya svg{width:100%;height:26px;display:block}
+.growth .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:32px;align-items:end}
+.fig{position:relative;min-height:300px}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+svg text{font:14px Figtree,sans-serif;fill:var(--soft);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.row{display:grid;grid-template-columns:5.5em minmax(0,1fr) 4em;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.row .bar{height:14px;border-radius:2px;background:var(--wine)}
+.row.lite .bar{background:var(--olive)}
+.row b{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pills{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 8px}
+.pill{background:var(--wine2);border-radius:10px;padding:12px 16px}
+.pill .big{font-size:30px;color:var(--wine)}
+.pill span{display:block;font-size:14px;color:var(--soft)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:14px;color:var(--soft);font-weight:500}
+td.n,th.n{text-align:right;white-space:nowrap}
+.note{font-size:13px;color:var(--soft);margin-top:10px}
+.vids{display:grid;gap:14px}
+.vid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline}
+.vid .track{grid-column:1/-1;height:10px;background:var(--line);border-radius:2px;overflow:hidden}
+.vid .track i{display:block;height:100%;background:var(--wine)}
+.vid small{grid-column:1/-1;color:var(--soft);font-size:14px}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.why div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px}
+.why .big{font-size:34px;color:var(--oya);margin-bottom:8px}
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+.cats figure{margin:0}
+.cats img{aspect-ratio:4/5;object-fit:cover;width:100%;border-radius:8px}
+.cats figcaption{font-size:15px;margin-top:8px;font-weight:500}
+.fmt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:8px}
+.fmt div{border-top:3px solid var(--olive);padding-top:12px}
+.trust{background:var(--wine2)}
+.trust ul{margin:0;padding-left:20px;columns:2;column-gap:48px}
+.trust li{margin-bottom:10px;break-inside:avoid}
+.contact{background:var(--panel);color:var(--ink)}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:center}
+.contact h2{color:var(--ink)}
+.mail{font-family:Fraunces,serif;font-size:clamp(22px,3vw,32px);color:var(--wine);overflow-wrap:anywhere}
+.btn{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;padding:10px 18px;border-radius:99px;background:var(--wine);color:var(--bg);font-weight:700;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.socials{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.socials li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.socials span{color:var(--soft)}
+footer{font-size:14px;color:var(--soft)}
+@media(max-width:860px){.why,.fmt{grid-template-columns:minmax(0,1fr)}.cats{grid-template-columns:repeat(2,minmax(0,1fr))}.trust ul{columns:1}}
+@media(max-width:700px){.hero .wrap,.growth .wrap,.grid2,.contact .wrap{grid-template-columns:minmax(0,1fr)}.frame{max-width:360px;margin:0 auto;transform:none}nav a{display:none}nav .tbtn{margin-left:auto}}
+@media(max-width:600px){table{font-size:13px}th,td{padding:8px 4px}.fig{min-height:240px}}
+@media(prefers-reduced-motion:no-preference){.mass{animation:rise 1.2s ease-out both}@keyframes rise{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Hatçe Teyze</b><a href="#kitle">Kitle</a><a href="#performans">Performans</a><a href="#isbirligi">İş birliği</a><a href="#iletisim">İletişim</a><button id="tema" class="tbtn" type="button" aria-label="Koyu temaya geç">☾ Koyu</button></div></nav>
+
+<div class="kilim" aria-hidden="true"><svg class="kl"></svg></div>
+<header class="hero band"><div class="wrap">
+  <div>
+    <h1>Hatçe Teyze</h1>
+    <p class="lead">Ege'nin bir köyünde yaşayan, Ege şivesiyle konuşan 75 yaşında bir teyze. Her gün işinin başında kameraya dönüp otuz saniyelik bir hayat dersi veriyor; izleyen kendi annesini, anneannesini görüyor.</p>
+    <span class="tag">Yapay zekâ ile oluşturulmuş kurgusal karakter · Senaryo ve kurgu insan eliyle</span>
+    <div class="figs">
+      <div><span class="big" id="fFollow">18,2 bin</span><span id="fFollowL">Instagram takipçisi, hesap açılalı 18 gün</span></div>
+      <div><span class="big" id="fViews">8,5 milyon</span><span>Instagram görüntüleme, son 30 gün</span></div>
+      <div><span class="big" id="fMed">176 bin</span><span>Video başına medyan izlenme</span></div>
+      <div><span class="big" id="fShare">12,5</span><span>Her 1.000 izlenmede videoyu birine gönderen kişi</span></div>
+    </div>
+  </div>
+  <figure class="frame"><img src="img/patik.jpg" alt="Hatçe Teyze sedirde el örgüsü patik örüyor"><figcaption>Hatçe, kış patiklerini örerken</figcaption></figure>
+</div></header>
+
+<div class="oya" aria-hidden="true"><svg id="oya1" preserveAspectRatio="none"></svg></div>
+
+<section class="growth band" id="performans"><div class="wrap">
+  <div>
+    <h2 id="gTitle">İlk 18 günde sıfırdan 18 bin takipçiye</h2>
+    <p class="lead">Büyümenin neredeyse tamamı reklamsız, videoların paylaşılmasıyla geldi: izleyenlerin %90'ından fazlası henüz takipçi değil.</p>
+    <p class="note" id="gNote"></p>
+  </div>
+  <div class="fig"><svg id="chart" role="img" aria-label="Instagram takipçi sayısının günlük artışı"></svg></div>
+</div></section>
+
+<div class="kilim" aria-hidden="true"><svg class="kl"></svg></div>
+<section class="band" id="kitle" style="background:var(--panel)"><div class="wrap">
+  <h2>Kimlere ulaşıyor?</h2>
+  <p class="lead">Ulaşılması en zor ve evin alışveriş kararını veren kitleye: ileri yaştaki kadınlar.</p>
+  <div class="pills">
+    <div class="pill"><span class="big" id="pFem">%79</span><span>kadın</span></div>
+    <div class="pill"><span class="big" id="p45">%84</span><span>45 yaş ve üzeri</span></div>
+    <div class="pill"><span class="big" id="p55">%66</span><span>55 yaş ve üzeri</span></div>
+    <div class="pill"><span class="big" id="pTr">%94</span><span>Türkiye</span></div>
+  </div>
+  <div class="grid2" style="margin-top:20px">
+    <div><h3>Yaş dağılımı</h3><div id="ages"></div><p class="note">Instagram takipçileri, yaşı bilinenler.</p></div>
+    <div><h3>Başlıca şehirler</h3><div id="cities"></div><p class="note" id="cNote">Takipçiler tek bir bölgede değil, Türkiye'nin büyük şehirlerine yayılmış.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap grid2">
+  <div>
+    <h2>Dört platformda her gün</h2>
+    <p class="lead">Aynı video her akşam 18:00'de Instagram, Facebook, YouTube Shorts ve TikTok'ta yayınlanır.</p>
+    <div class="scroll"><table><thead><tr><th>Platform</th><th class="n">Takipçi</th><th class="n">Görüntüleme</th><th class="n">Dönem</th></tr></thead><tbody id="plat"></tbody></table></div>
+    <p class="note">Her satırın verisi kendi tarihinde ölçüldü; YouTube'da abone, diğerlerinde takipçi.</p>
+  </div>
+  <div>
+    <h2>Saklanmıyor, gönderiliyor</h2>
+    <p class="lead">Anneler videoyu çocuğuna, kadınlar kız kardeşine ve komşusuna yolluyor. Marka mesajı da bu yolla yayılır.</p>
+    <div class="vids" id="vids"></div>
+  </div>
+</div></section>
+
+<section class="band" style="background:var(--panel)"><div class="wrap">
+  <h2>Neden Hatçe?</h2>
+  <div class="why" style="margin-top:20px">
+    <div><p class="big">Güven</p><h3>Bir influencer gibi değil, bir büyük gibi konuşur</h3><p>Önerdiği şey reklam değil, nasihat gibi algılanır. Ege şivesi, el işleri ve köy evi izleyicinin kendi geçmişinden tanıdığı bir dünya kurar.</p></div>
+    <div><p class="big">Kitle</p><h3>Kimsenin konuşmadığı kadınlara konuşur</h3><p>Takipçilerin üçte ikisi 55 yaş üstünde, beşte dördü kadın. Mutfağın, kilerin, el işinin ve aile hediyelerinin kararını veren kişiler.</p></div>
+    <div><p class="big">Yayılım</p><h3>İçerik kendiliğinden dolaşır</h3><p>Videolar belli bir kişiye gönderilmek üzere kurulur: anneye, eşe, evlada. Bir iş birliği, takipçi sayısının çok ötesine ulaşır.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="isbirligi"><div class="wrap">
+  <h2>İş birliği nasıl olur?</h2>
+  <p class="lead">Hatçe ürünü anlatmaz, kullanır. Ürün hikâyenin doğal bir parçası olur; ders konuşulur, ürün görünür.</p>
+  <div class="fmt">
+    <div><h3>Hikâye içinde ürün</h3><p>Hatçe günlük işini yaparken ürün sahnede yer alır: reçel kaynatırken, patik örerken, sofrayı kurarken.</p></div>
+    <div><h3>Markaya özel video</h3><p>Mevsime, kampanyaya ya da özel güne göre kurgulanan, markanın derdine uygun bir Hatçe hikâyesi.</p></div>
+    <div><h3>Dört platform paketi</h3><p>Aynı video Instagram, Facebook, YouTube ve TikTok'ta. İstenirse markanın kendi reklamlarında kullanım hakkı.</p></div>
+  </div>
+  <h3 style="margin-top:36px">Doğal olarak oturan alanlar</h3>
+  <div class="cats">
+    <figure><img src="img/oya.jpg" alt="Hatçe pencere önünde yazma oyası işliyor" loading="lazy"><figcaption>Örgü, iplik, el işi ve ev tekstili</figcaption></figure>
+    <figure><img src="img/mutfak.jpg" alt="Hatçe mutfakta, rafta kavanozlar ve zeytinyağı" loading="lazy"><figcaption>Yöresel gıda, zeytinyağı, reçel</figcaption></figure>
+    <figure><img src="img/incir.jpg" alt="Hatçe avluda bakır sinide kuru incir ayıklıyor" loading="lazy"><figcaption>Kuru incir, zeytin, mevsim ürünleri</figcaption></figure>
+    <figure><img src="img/telefon.jpg" alt="Hatçe sedirde gözlüklü, elinde telefon" loading="lazy"><figcaption>Emekliye yönelik hizmetler, aile iletişimi</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="trust band"><div class="wrap">
+  <h2>Marka için güvenli, izleyiciye karşı şeffaf</h2>
+  <ul style="margin-top:16px">
+    <li>Siyaset, din tartışması ve sağlık tavsiyesi yok.</li>
+    <li>Skandal riski yok; karakter her zaman aynı değerlerle konuşur.</li>
+    <li>Her ücretli paylaşım "reklam" ibaresiyle yayınlanır.</li>
+    <li>Hesapta ve iş birliklerinde yapay zekâ karakteri olduğu açıkça belirtilir.</li>
+    <li>Kullanım hakları ve yayın takvimi teklif aşamasında yazılı olarak belirlenir.</li>
+    <li>Sponsorlu içerik haftada en fazla bir iki kez; kitlenin güveni korunur.</li>
+  </ul>
+</div></section>
+
+<div class="kilim" aria-hidden="true"><svg class="kl"></svg></div>
+<section class="contact band" id="iletisim"><div class="wrap">
+  <div>
+    <h2>Birlikte bir hikâye kuralım</h2>
+    <p class="lead">Brief'inizi ve kampanya tarihinizi gönderin; size özel bir fikir ve teklifle dönelim.</p>
+    <p class="mail" id="mail">hatce.teyze.ai@gmail.com</p>
+    <button class="btn" id="copy" type="button">E-posta adresini kopyala</button>
+  </div>
+  <ul class="socials">
+    <li><b>Instagram</b><span>@hatce.teyze.ai</span></li>
+    <li><b>Facebook</b><span>Hatçe Teyze</span></li>
+    <li><b>YouTube</b><span>@hatce.teyze.ai.01</span></li>
+    <li><b>TikTok</b><span>@hatceteyze.ai</span></li>
+  </ul>
+</div></section>
+
+<footer class="band" style="padding-block:24px"><div class="wrap" id="foot">Son güncelleme: 25 Kasım 2026 · Kaynak: Metricool ve platform panoları</div></footer>
+
+<script id="seed" type="application/json">{"updated":"2026-11-25","source":"Metricool (Instagram, YouTube) ve platform panoları","account_start":"2026-11-05","instagram":{"followers":18241,"followers_date":"2026-11-23","views_30d":8468950,"shares_30d":107926,"reels_30d":20,"median_reel_views":176207,"shares_per_1000":12.5,"growth":[["2026-11-05",0],["2026-11-11",8572],["2026-11-12",9349],["2026-11-13",9898],["2026-11-14",10290],["2026-11-15",10881],["2026-11-16",11497],["2026-11-17",12104],["2026-11-18",13483],["2026-11-19",14319],["2026-11-20",14932],["2026-11-21",16066],["2026-11-22",17362],["2026-11-23",18241]]},"audience":{"female_pct":79.4,"turkey_pct":93.6,"age":[["55–64",34.4],["65+",32.0],["45–54",17.6],["35–44",7.0],["25–34",6.9],["18–24",1.8]],"cities_date":"2026-11-24","cities":[["İstanbul",11.4],["İzmir",5.0],["Ankara",4.9],["Bursa",3.2],["Konya",2.6],["Adana",1.9],["Antalya",1.9]]},"platforms":[{"name":"Instagram","followers":18241,"views":8468950,"period":"30 gün","date":"2026-11-23"},{"name":"Facebook","followers":2929,"views":947900,"period":"28 gün","date":"2026-11-24"},{"name":"YouTube","followers":1410,"views":1000000,"period":"28 gün","date":"2026-11-24"},{"name":"TikTok","followers":null,"views":618800,"period":"7 gün","date":"2026-11-24"}],"top_videos":[{"title":"Ananızı arayın, o sizi bekliyo","views":2316741,"shares":38926},{"title":"Anneanneye niye iki kere ana derler?","views":1053568,"shares":25347},{"title":"Babaanne sesini heç çıkarmaz","views":1041456,"shares":5382},{"title":"Gavgayı yastığa taşıma","views":814972,"shares":5294}]}</script>
+<script>
+{
+const $=id=>document.getElementById(id);
+const root=document.documentElement;let mode='light';try{mode=localStorage.getItem('hatce-tema')||'light'}catch(e){}
+const setMode=m=>{mode=m;root.dataset.theme=m;const b=$('tema');b.textContent=m==='dark'?'☀ Açık':'☾ Koyu';b.setAttribute('aria-label',m==='dark'?'Açık temaya geç':'Koyu temaya geç');try{localStorage.setItem('hatce-tema',m)}catch(e){}};
+setMode(mode);
+new MutationObserver(()=>{if(root.dataset.theme!==mode)root.dataset.theme=mode}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+$('tema').addEventListener('click',()=>setMode(mode==='dark'?'light':'dark'));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+const dt=s=>{const d=new Date(s+'T12:00:00');return d.getDate()+' '+AY[d.getMonth()]+' '+d.getFullYear()};
+const dShort=s=>{const d=new Date(s+'T12:00:00');return d.getDate()+' '+AY[d.getMonth()].slice(0,3)};
+const tr=(n,dig=0)=>n.toLocaleString('tr-TR',{minimumFractionDigits:dig,maximumFractionDigits:dig});
+const human=n=>n==null?'—':n>=1e6?tr(n/1e6,n>=1e7?0:1)+' milyon':n>=1e4?tr(n/1e3,n>=1e5?0:1)+' bin':tr(n);
+const days=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+let D;
+const oya=svg=>{const W=svg.clientWidth||1200,n=Math.max(8,Math.round(W/34));let s='';for(let i=0;i<n;i++){const x=(i+.5)*W/n;s+=`<path d="M${x-17} 2 Q${x} 26 ${x+17} 2" fill="none" stroke="var(--olive)" stroke-width="1.5"/><circle cx="${x}" cy="12" r="5" fill="var(--oya)"/><circle cx="${x}" cy="12" r="2" fill="var(--bg)"/>`}svg.setAttribute('viewBox',`0 0 ${W} 26`);svg.innerHTML=s};
+const kilim=svg=>{const W=svg.clientWidth||1200,H=34,u=34,n=Math.ceil(W/u)+1,cols=['var(--oya)','var(--wine)','var(--olive)','var(--sun)'];let s=`<rect width="${W}" height="${H}" fill="var(--bg)"/><rect y="0" width="${W}" height="3" fill="var(--wine)"/><rect y="${H-3}" width="${W}" height="3" fill="var(--wine)"/>`;for(let i=0;i<n;i++){const x=i*u+u/2,c=cols[i%4],y=H/2;s+=`<path d="M${x} ${y-11} L${x+11} ${y} L${x} ${y+11} L${x-11} ${y} Z" fill="${c}"/><path d="M${x} ${y-5} L${x+5} ${y} L${x} ${y+5} L${x-5} ${y} Z" fill="var(--bg)"/><path d="M${x+12} ${y-9} l4 4 l-4 4 M${x+12} ${y+1} l4 4 l-4 4" stroke="var(--soft)" stroke-width="1.5" fill="none" opacity=".5"/>`}svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML=s};
+const chart=()=>{const s=$('chart'),W=s.clientWidth,H=s.clientHeight;if(!W||!D)return;const g=D.instagram.growth,m={l:8,r:W<520?60:84,t:30,b:30};const t0=+new Date(g[0][0]),t1=+new Date(g[g.length-1][0]);const max=Math.ceil(g[g.length-1][1]/5000)*5000||5000;
+const X=t=>m.l+(+new Date(t)-t0)/(t1-t0||1)*(W-m.l-m.r),Y=v=>H-m.b-v/max*(H-m.t-m.b);
+let p=`M${X(g[0][0])} ${Y(0)}`;g.forEach(([d,v])=>p+=` L${X(d)} ${Y(v)}`);const last=g[g.length-1];
+let grid='';for(let v=5000;v<=max;v+=5000)grid+=`<line x1="${m.l}" x2="${W-m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${W-m.r+8}" y="${Y(v)+5}">${tr(v/1000)} bin</text>`;
+const lab=g.filter((r,i)=>i===0||i===g.length-1||(W>=520&&i%4===0)).map(([d])=>`<text x="${X(d)}" y="${H-8}" text-anchor="middle">${dShort(d)}</text>`).join('');
+s.innerHTML=grid+`<path class="mass" d="${p} L${X(last[0])} ${Y(0)} Z" fill="var(--wine)"/><path d="${p}" fill="none" stroke="var(--oya)" stroke-width="2.5"/><circle cx="${X(last[0])}" cy="${Y(last[1])}" r="5" fill="var(--oya)"/>`+lab+`<text x="${X(last[0])-8}" y="${Y(last[1])-12}" text-anchor="end" style="font-weight:700;fill:var(--ink)">${tr(last[1])}</text>`;};
+const render=d=>{D=d;const ig=d.instagram,a=d.audience,age=Object.fromEntries(a.age);
+const n=days(d.account_start,ig.followers_date);
+$('fFollow').textContent=human(ig.followers);$('fFollowL').textContent=`Instagram takipçisi, hesap açılalı ${n} gün`;
+$('fViews').textContent=human(ig.views_30d);$('fMed').textContent=human(ig.median_reel_views);$('fShare').textContent=tr(ig.shares_per_1000,1);
+$('gTitle').textContent=`İlk ${n} günde sıfırdan ${human(ig.followers)} takipçiye`;
+$('gNote').textContent=`Son ${ig.reels_30d} videoda toplam ${tr(ig.shares_30d)} gönderim. Takipçi ölçümü ${dt(ig.followers_date)}; 5–10 Kasım arası ölçüm yok.`;
+$('pFem').textContent='%'+tr(a.female_pct);$('pTr').textContent='%'+tr(a.turkey_pct);
+const p45=(age['45–54']||0)+(age['55–64']||0)+(age['65+']||0),p55=(age['55–64']||0)+(age['65+']||0);$('p45').textContent='%'+tr(p45);$('p55').textContent='%'+tr(p55);
+const amax=Math.max(...a.age.map(r=>r[1]));$('ages').innerHTML=a.age.map(([k,v])=>`<div class="row"><span>${esc(k)}</span><div class="bar" style="width:${v/amax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
+const cmax=Math.max(...a.cities.map(r=>r[1]));$('cities').innerHTML=a.cities.map(([k,v])=>`<div class="row lite"><span>${esc(k)}</span><div class="bar" style="width:${v/cmax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
+$('plat').innerHTML=d.platforms.map(p=>`<tr><td>${esc(p.name)}</td><td class="n">${p.followers==null?'—':esc(tr(p.followers))}</td><td class="n">${esc(human(p.views))}</td><td class="n">${esc(p.period)}</td></tr>`).join('');
+const vmax=Math.max(...d.top_videos.map(v=>v.views));$('vids').innerHTML=d.top_videos.map(v=>`<div class="vid"><span>${esc(v.title)}</span><b>${esc(human(v.views))}</b><div class="track"><i style="width:${v.views/vmax*100}%"></i></div><small>${esc(tr(v.shares))} kez gönderildi</small></div>`).join('');
+$('foot').textContent=`Son güncelleme: ${dt(d.updated)} · Kaynak: ${d.source}. Rakamlar her hafta yenilenir.`;
+chart()};
+render(JSON.parse($('seed').textContent));
+fetch('data.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d)render(d)}).catch(()=>{});
+const ro=new ResizeObserver(()=>{chart();oya($('oya1'))});ro.observe($('chart'));ro.observe($('oya1'));const ro2=new ResizeObserver(()=>document.querySelectorAll('.kl').forEach(kilim));ro2.observe(document.body);
+$('copy').addEventListener('click',()=>{const b=$('copy');navigator.clipboard.writeText('hatce.teyze.ai@gmail.com').then(()=>{b.textContent='Kopyalandı'},()=>{b.textContent='Adresi seçip kopyalayın'})});
+}
+</script>
+</body>
+</html>

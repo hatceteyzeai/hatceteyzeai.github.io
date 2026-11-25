@@ -1,2 +1,3 @@
-# hatceteyzeai.github.io
-Hatçe Teyze medya kiti
+# Hatçe Teyze — Medya Kiti
+
+https://hatceteyzeai.github.io

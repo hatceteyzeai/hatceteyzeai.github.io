@@ -1,0 +1,64 @@
+{
+  "updated": "2026-11-25",
+  "source": "Metricool (Instagram, YouTube) ve platform panoları",
+  "account_start": "2026-11-05",
+  "instagram": {
+    "followers": 18241,
+    "followers_date": "2026-11-23",
+    "views_30d": 8468950,
+    "shares_30d": 107926,
+    "reels_30d": 20,
+    "median_reel_views": 176207,
+    "shares_per_1000": 12.5,
+    "growth": [
+      ["2026-11-05", 0],
+      ["2026-11-11", 8572],
+      ["2026-11-12", 9349],
+      ["2026-11-13", 9898],
+      ["2026-11-14", 10290],
+      ["2026-11-15", 10881],
+      ["2026-11-16", 11497],
+      ["2026-11-17", 12104],
+      ["2026-11-18", 13483],
+      ["2026-11-19", 14319],
+      ["2026-11-20", 14932],
+      ["2026-11-21", 16066],
+      ["2026-11-22", 17362],
+      ["2026-11-23", 18241]
+    ]
+  },
+  "audience": {
+    "female_pct": 79.4,
+    "turkey_pct": 93.6,
+    "age": [
+      ["55–64", 34.4],
+      ["65+", 32.0],
+      ["45–54", 17.6],
+      ["35–44", 7.0],
+      ["25–34", 6.9],
+      ["18–24", 1.8]
+    ],
+    "cities_date": "2026-11-24",
+    "cities": [
+      ["İstanbul", 11.4],
+      ["İzmir", 5.0],
+      ["Ankara", 4.9],
+      ["Bursa", 3.2],
+      ["Konya", 2.6],
+      ["Adana", 1.9],
+      ["Antalya", 1.9]
+    ]
+  },
+  "platforms": [
+    {"name": "Instagram", "handle": "@hatce.teyze.ai", "followers": 18241, "views": 8468950, "period": "30 gün", "date": "2026-11-23"},
+    {"name": "Facebook", "handle": "Hatçe Teyze", "followers": 2929, "views": 947900, "period": "28 gün", "date": "2026-11-24"},
+    {"name": "YouTube", "handle": "@hatce.teyze.ai.01", "followers": 1410, "views": 1000000, "period": "28 gün", "date": "2026-11-24"},
+    {"name": "TikTok", "handle": "@hatceteyze.ai", "followers": null, "views": 618800, "period": "7 gün", "date": "2026-11-24"}
+  ],
+  "top_videos": [
+    {"title": "Ananızı arayın, o sizi bekliyo", "views": 2316741, "shares": 38926},
+    {"title": "Anneanneye niye iki kere ana derler?", "views": 1053568, "shares": 25347},
+    {"title": "Babaanne sesini heç çıkarmaz", "views": 1041456, "shares": 5382},
+    {"title": "Gavgayı yastığa taşıma", "views": 814972, "shares": 5294}
+  ]
+}
