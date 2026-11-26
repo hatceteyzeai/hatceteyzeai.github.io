@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "source": "Metricool (her gün) ve platform panoları (haftalık, elle)",
   "account_start": "2026-11-05",
   "instagram": {
-    "followers": 18241,
-    "followers_date": "2026-11-23",
-    "views_30d": 8468950,
-    "shares_30d": 107926,
-    "reels_30d": 20,
-    "median_reel_views": 176207,
-    "shares_per_1000": 12.5,
+    "followers": 18913,
+    "followers_date": "2026-11-24",
+    "views_30d": 8796563,
+    "shares_30d": 111120,
+    "reels_30d": 22,
+    "median_reel_views": 144146,
+    "shares_per_1000": 12.4,
     "growth": [
       [
         "2026-11-05",
@@ -66,25 +66,29 @@
       [
         "2026-11-23",
         18241
+      ],
+      [
+        "2026-11-24",
+        18913
       ]
     ],
-    "date": "2026-11-24"
+    "date": "2026-11-25"
   },
   "audience": {
-    "female_pct": 79.4,
-    "turkey_pct": 93.6,
+    "female_pct": 78.8,
+    "turkey_pct": 93.4,
     "age": [
       [
         "55–64",
-        34.4
+        34.6
       ],
       [
         "65+",
-        32.0
+        31.8
       ],
       [
         "45–54",
-        17.6
+        17.7
       ],
       [
         "35–44",
@@ -92,18 +96,18 @@
       ],
       [
         "25–34",
-        6.9
+        6.8
       ],
       [
         "18–24",
         1.8
       ]
     ],
-    "cities_date": "2026-11-24",
+    "cities_date": "2026-11-25",
     "cities": [
       [
         "İstanbul",
-        11.4
+        11.3
       ],
       [
         "İzmir",
@@ -130,33 +134,33 @@
         1.9
       ]
     ],
-    "date": "2026-11-24"
+    "date": "2026-11-26"
   },
   "platforms": [
     {
       "name": "Instagram",
       "handle": "@hatce.teyze.ai",
-      "followers": 18241,
-      "views": 8468950,
+      "followers": 18913,
+      "views": 8796563,
       "period": "30 gün",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "auto": true,
       "window": 30
     },
     {
       "name": "Facebook",
       "handle": "Hatçe Teyze",
-      "followers": 2929,
-      "views": 947900,
+      "followers": 3217,
+      "views": 1081462,
       "period": "28 gün",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "auto": false,
       "window": 28
     },
     {
       "name": "YouTube",
       "handle": "@hatce.teyze.ai.01",
-      "followers": 1410,
+      "followers": 1510,
       "views": 1000000,
       "period": "28 gün",
       "date": "2026-11-24",
@@ -167,9 +171,9 @@
       "name": "TikTok",
       "handle": "@hatceteyze.ai",
       "followers": null,
-      "views": 618800,
+      "views": 680000,
       "period": "7 gün",
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "auto": false,
       "window": 7
     }
@@ -177,23 +181,23 @@
   "top_videos": [
     {
       "title": "Ananızı arayın, o sizi bekliyo",
-      "views": 2316741,
-      "shares": 38926
-    },
-    {
-      "title": "Anneanneye niye iki kere ana derler?",
-      "views": 1053568,
-      "shares": 25347
+      "views": 2330001,
+      "shares": 39138
     },
     {
       "title": "Babaanne sesini heç çıkarmaz",
-      "views": 1041456,
-      "shares": 5382
+      "views": 1094860,
+      "shares": 5773
+    },
+    {
+      "title": "Anneanneye niye iki kere ana derler?",
+      "views": 1086050,
+      "shares": 26482
     },
     {
       "title": "Gavgayı yastığa taşıma",
-      "views": 814972,
-      "shares": 5294
+      "views": 820281,
+      "shares": 5323
     }
   ]
 }
