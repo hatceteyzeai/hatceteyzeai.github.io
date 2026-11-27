@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "source": "Metricool (her gün) ve platform panoları (haftalık, elle)",
   "account_start": "2026-11-05",
   "instagram": {
-    "followers": 18913,
-    "followers_date": "2026-11-24",
-    "views_30d": 8796563,
-    "shares_30d": 111120,
-    "reels_30d": 22,
-    "median_reel_views": 144146,
-    "shares_per_1000": 12.4,
+    "followers": 19604,
+    "followers_date": "2026-11-27",
+    "views_30d": 9087112,
+    "shares_30d": 113908,
+    "reels_30d": 23,
+    "median_reel_views": 125425,
+    "shares_per_1000": 12.3,
     "growth": [
       [
         "2026-11-05",
@@ -70,110 +70,118 @@
       [
         "2026-11-24",
         18913
-      ]
-    ],
-    "date": "2026-11-25"
-  },
-  "audience": {
-    "female_pct": 78.8,
-    "turkey_pct": 93.4,
-    "age": [
-      [
-        "55–64",
-        34.6
       ],
       [
-        "65+",
-        31.8
+        "2026-11-25",
+        19510
       ],
       [
-        "45–54",
-        17.7
-      ],
-      [
-        "35–44",
-        7.0
-      ],
-      [
-        "25–34",
-        6.8
-      ],
-      [
-        "18–24",
-        1.8
-      ]
-    ],
-    "cities_date": "2026-11-25",
-    "cities": [
-      [
-        "İstanbul",
-        11.3
-      ],
-      [
-        "İzmir",
-        5.0
-      ],
-      [
-        "Ankara",
-        4.9
-      ],
-      [
-        "Bursa",
-        3.2
-      ],
-      [
-        "Konya",
-        2.6
-      ],
-      [
-        "Adana",
-        1.9
-      ],
-      [
-        "Antalya",
-        1.9
+        "2026-11-27",
+        19604
       ]
     ],
     "date": "2026-11-26"
+  },
+  "audience": {
+    "female_pct": 77.2,
+    "turkey_pct": 93.5,
+    "age": [
+      [
+        "55–64",
+        34.8
+      ],
+      [
+        "65+",
+        32.2
+      ],
+      [
+        "45–54",
+        17.5
+      ],
+      [
+        "35–44",
+        6.8
+      ],
+      [
+        "25–34",
+        6.7
+      ],
+      [
+        "18–24",
+        1.7
+      ]
+    ],
+    "cities_date": "2026-11-27",
+    "cities": [
+      [
+        "İstanbul",
+        11.8
+      ],
+      [
+        "Ankara",
+        5.3
+      ],
+      [
+        "İzmir",
+        5.3
+      ],
+      [
+        "Bursa",
+        3.4
+      ],
+      [
+        "Konya",
+        2.7
+      ],
+      [
+        "Adana",
+        2.0
+      ],
+      [
+        "Antalya",
+        2.0
+      ]
+    ],
+    "date": "2026-11-27"
   },
   "platforms": [
     {
       "name": "Instagram",
       "handle": "@hatce.teyze.ai",
-      "followers": 18913,
-      "views": 8796563,
+      "followers": 19604,
+      "views": 9087112,
       "period": "30 gün",
-      "date": "2026-11-24",
+      "date": "2026-11-27",
       "auto": true,
       "window": 30
     },
     {
       "name": "Facebook",
       "handle": "Hatçe Teyze",
-      "followers": 3217,
-      "views": 1081462,
+      "followers": 3292,
+      "views": 1126687,
       "period": "28 gün",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "auto": false,
       "window": 28
     },
     {
       "name": "YouTube",
       "handle": "@hatce.teyze.ai.01",
-      "followers": 1526,
-      "views": 1098112,
+      "followers": 1605,
+      "views": 1185905,
       "period": "28 gün",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "auto": false,
       "window": 28
     },
     {
       "name": "TikTok",
       "handle": "@hatceteyze.ai",
-      "followers": null,
-      "views": 680000,
+      "followers": 648,
+      "views": 677600,
       "period": "7 gün",
-      "date": "2026-11-26",
+      "date": "2026-11-25",
       "auto": false,
       "window": 7
     }
@@ -181,23 +189,23 @@
   "top_videos": [
     {
       "title": "Ananızı arayın, o sizi bekliyo",
-      "views": 2330001,
-      "shares": 39138
+      "views": 2340539,
+      "shares": 39320
     },
     {
       "title": "Babaanne sesini heç çıkarmaz",
-      "views": 1094860,
-      "shares": 5773
+      "views": 1138395,
+      "shares": 6019
     },
     {
       "title": "Anneanneye niye iki kere ana derler?",
-      "views": 1086050,
-      "shares": 26482
+      "views": 1113282,
+      "shares": 27613
     },
     {
       "title": "Gavgayı yastığa taşıma",
-      "views": 820281,
-      "shares": 5323
+      "views": 825274,
+      "shares": 5361
     }
   ]
 }
