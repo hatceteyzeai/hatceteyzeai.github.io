@@ -160,7 +160,7 @@ footer{font-size:14px;color:var(--soft)}
     <h2>Dört platformda her gün</h2>
     <p class="lead">Aynı video her akşam 18:00'de Instagram, Facebook, YouTube Shorts ve TikTok'ta yayınlanır.</p>
     <div class="scroll"><table><thead><tr><th>Platform</th><th class="n">Takipçi</th><th class="n">Görüntüleme</th><th class="n">Dönem</th><th class="n">Güncelleme</th></tr></thead><tbody id="plat"></tbody></table></div>
-    <p class="note">Instagram her gün otomatik, diğer platformlar haftalık olarak güncellenir. YouTube'da abone, diğerlerinde takipçi sayısı.</p>
+    <p class="note">Instagram her gün otomatik, diğer platformlar haftalık olarak güncellenir. YouTube'da abone, diğerlerinde takipçi sayısı. Instagram profilinde görünen Reels sayıları, aynı videonun Facebook görüntülemelerini de içerir; bu sayfada iki platform ayrı ayrı gösterilmiştir.</p>
   </div>
   <div>
     <h2>Saklanmıyor, gönderiliyor</h2>
@@ -264,7 +264,7 @@ const amax=Math.max(...a.age.map(r=>r[1]));$('ages').innerHTML=a.age.map(([k,v])
 const cmax=Math.max(...a.cities.map(r=>r[1]));$('cities').innerHTML=a.cities.map(([k,v])=>`<div class="row lite"><span>${esc(k)}</span><div class="bar" style="width:${v/cmax*100}%"></div><b>%${esc(tr(v,1))}</b></div>`).join('');
 $('plat').innerHTML=d.platforms.map(p=>`<tr><td>${esc(p.name)}</td><td class="n">${p.followers==null?'—':esc(tr(p.followers))}</td><td class="n">${esc(human(p.views))}</td><td class="n">${esc(per(p.window||30,p.date))}</td><td class="n">${esc(dShort(p.date))}</td></tr>`).join('');
 const vmax=Math.max(...d.top_videos.map(v=>v.views));$('vids').innerHTML=d.top_videos.map(v=>`<div class="vid"><span>${esc(v.title)}</span><b>${esc(human(v.views))}</b><div class="track"><i style="width:${v.views/vmax*100}%"></i></div><small>${esc(tr(v.shares))} kez gönderildi</small></div>`).join('');
-$('vidNote').textContent=`Instagram, ${per(30,ig.date||ig.followers_date)}. Güncelleme: ${dt(ig.date||ig.followers_date)}.`;$('foot').textContent=`Son güncelleme: ${dt(d.updated)} · Kaynak: ${d.source}. Instagram ve YouTube abone verileri her gün, diğerleri haftada bir güncellenir.`;
+$('vidNote').textContent=`Yalnızca Instagram görüntülemeleri (profilde görünen sayılara Facebook da eklenir), ${per(30,ig.date||ig.followers_date)}. Güncelleme: ${dt(ig.date||ig.followers_date)}.`;$('foot').textContent=`Son güncelleme: ${dt(d.updated)} · Kaynak: ${d.source}. Instagram ve YouTube abone verileri her gün, diğerleri haftada bir güncellenir.`;
 chart()};
 render(JSON.parse($('seed').textContent));
 fetch('data.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d)render(d)}).catch(()=>{});
